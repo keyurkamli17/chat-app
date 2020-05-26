@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: none;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: none;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: none;
+        }
+    </style>
+    <title>ChatApp</title>
+</head>
+
+<body class="body">
+    <div class="regbox">
+        <h1>Join ChatApp</h1>
+        <form action="/chat.html">
+            <ul>
+                <li><label for="name">Name</label></li>
+                <li>
+                    <input type="text" id="text" name="username" placeholder="Username" required>
+                </li>
+                <li><label for="room">Room</label></li>
+                <li>
+                    <input type="text" name="room" placeholder="Roomname" required>
+                </li>
+                <li>
+                    <button type="submit">Join</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <script type="text/javascript">
+        const $Input = document.querySelector('#text')
+        $Input.focus()
+    </script>
+</body>
+
+</html>

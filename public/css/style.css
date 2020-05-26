@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap&family=Hind&display=swap');
+html, body{
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+main{
+position: fixed;
+width: 1152px;
+height: 695px;
+
+overflow-y: auto;
+background:  #ffffff;
+box-shadow: 0 0 30px rgb(0,0,0,.1);
+scroll-behavior: smooth;
+}
+
+.clearfix{
+    width: cover;
+    height: 20px;
+}
+
+.clearfixed{
+    width: cover;
+    height: 110px;
+
+    background: transparent;
+}
+
+.sidebar{
+width: 303px;
+height: 695px;
+
+background: #131313;
+position: fixed;
+float: left;
+}
+
+.roomdata{
+    position: relative;
+    margin-top: -5px;
+    height: 550px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.roomdata .room{
+    background: #000;
+    padding: 1px;
+}
+
+.roomdata .room h1{
+    color: #c1c1c1;
+    position: relative;
+    font-family: 'Questrial', sans-serif;
+    font-weight: light;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.roomdata .users{
+    width: 303px;
+    height: 510px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.roomdata .users ul{
+    margin: 0;
+    padding: 0;
+}
+
+.roomdata .users ul li{
+    list-style: none;
+    display: block;
+    font-size: 20px;
+    font-family: 'Hind', sans-serif;
+    margin-left: 30px;
+    
+    color: #C1C1C1;
+}
+
+.logo{
+width: 303px;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.logo h1{
+font-family: 'Questrial', sans-serif;
+font-size: 22px;
+line-height: 24px;
+
+color: #C1C1C1;
+}
+
+.credit{
+position: absolute;
+left: 0;
+bottom: 0;
+width: 303px;
+height: 60px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.credit h5{
+    font-family: 'Questrial', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 15px;
+
+color: #9D9D9D;
+}
+
+.chatapp{
+border-radius: 10px;
+width: 750px;
+margin-top: 20px;
+margin-left: 340px;
+
+height: auto;
+box-sizing: content-box;
+overflow: hidden;
+}
+
+.message{
+position: relative;
+margin-top: 0px;
+width: 711px;
+height: auto;
+box-sizing: content-box;
+padding: 20px;
+
+background: #efefef;
+animation: fade .5s ease-in-out;
+border-radius: 10px;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.username h1{
+position: absolute;
+margin-top: 0px;
+
+color: #686668;
+font-family: 'Hind', sans-serif;
+font-weight: bolder;
+font-size: 15px;
+line-height: 21px;
+}
+
+.message_body p{
+position: relative;
+margin-top: 30px;
+font-family: 'Hind', sans-serif;
+font-size: 16px;
+line-height: 18px;
+
+color: #777777;
+}
+
+.time{
+font-family: 'Hind', sans-serif;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+
+color: #686668;
+
+position: absolute;
+bottom: -5px;
+right: 25px;
+}
+
+.sendbox{
+    position: fixed;
+    bottom: 0px;
+    width: 850px;
+    margin-left: 303px;
+    background: #ffffff;
+}
+
+.sendbox .inputbox input{
+    width: 600px;
+    padding: 35px 50px;
+    background: #fff;
+    border: 0;
+    outline: 0;
+
+    font-size: 18px;
+    font-family: 'Questrial', sans-serif;
+
+}
+
+.inputbox #send{
+    position: absolute;
+    right: 70px;
+    border: 0;
+    padding: 30px;
+    cursor: pointer;
+    background: 0;
+    border-radius: 10px;
+    outline: 0;
+}
+
+#sendlocation{
+
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    border: 0;
+    padding: 20px;
+    cursor: pointer;
+    background: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #131313;
+}
+
+.body{
+    background-image: url(https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-attachment: fixed;
+    background-position: center;
+    width: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regbox{
+    background: transparent;
+    box-shadow: 0px 15px 40px rgb(0,0,0,.6);
+    padding: 80px;
+    animation: scal 1.5s ease-out;
+}
+
+@keyframes scal{
+    0%{
+        transform: scale(.5) rotate(30deg);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.regbox h1{
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 1px;
+}
+
+.regbox ul{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.regbox ul li{
+    list-style: none;
+}
+
+.regbox label{
+    color: #fff;
+    font-family: 'Questrial', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    text-shadow: 0 0 5px #000;
+}
+
+.regbox form input{
+    width: 300px;
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 8px rgb(0,0,0,.5);
+    border: 0;
+    color: #131313;
+    padding: 14px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.regbox form button{
+    width: 330px;
+    background: #fcc803;
+    border: 0;
+    margin-top: 10px;
+    font-family: 'Questrial', sans-serif;
+    outline: 0;
+    padding: 18px;
+    box-shadow: 0 0 8px rgb(0,0,0,.5);
+    cursor: pointer;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.regbox form button:hover{
+    background: rgb(253, 215, 0)
+}
